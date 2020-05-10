@@ -9,7 +9,7 @@ pipeline {
         stage('init') {
             steps {
                 script {
-                    name = "e-config"
+                    name = "e-listings"
                     port = "9001:9001"
                     registry = "192.168.0.25:5000"
                     buildNumber = "1.0.$BUILD_NUMBER"
@@ -19,7 +19,7 @@ pipeline {
         stage('fetch') {
             steps {
                 git url: 'https://github.com/mmahu/listings.git', branch: 'master'
-            }
+            }b
         }
         stage('build') {
             steps {
