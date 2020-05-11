@@ -19,7 +19,7 @@ pipeline {
         stage('fetch') {
             steps {
                 git url: 'https://github.com/mmahu/listings.git', branch: 'master'
-            }b
+            }
         }
         stage('build') {
             steps {
