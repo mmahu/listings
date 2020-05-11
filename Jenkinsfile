@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     name = "e-listings"
-                    port = "9001:9001"
+                    port = "9009:9009"
                     registry = "192.168.0.25:5000"
                     buildNumber = "1.0.$BUILD_NUMBER"
                 }
